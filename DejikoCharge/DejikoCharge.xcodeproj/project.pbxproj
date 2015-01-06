@@ -14,11 +14,14 @@
 		249A16C71A5C267D004ED4E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 249A16C61A5C267D004ED4E2 /* Images.xcassets */; };
 		249A16CA1A5C267D004ED4E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249A16C81A5C267D004ED4E2 /* LaunchScreen.xib */; };
 		249A16D61A5C267D004ED4E2 /* DejikoChargeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A16D51A5C267D004ED4E2 /* DejikoChargeTests.swift */; };
-		249A17401A5C2D3E004ED4E2 /* DejikoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 249A173F1A5C2D3E004ED4E2 /* DejikoProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		249A17461A5C2D3E004ED4E2 /* DejikoProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249A173B1A5C2D3E004ED4E2 /* DejikoProvider.framework */; };
 		249A174F1A5C2D3E004ED4E2 /* DejikoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A174E1A5C2D3E004ED4E2 /* DejikoProviderTests.swift */; };
 		249A17521A5C2D3E004ED4E2 /* DejikoProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249A173B1A5C2D3E004ED4E2 /* DejikoProvider.framework */; };
 		249A17541A5C2D3E004ED4E2 /* DejikoProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 249A173B1A5C2D3E004ED4E2 /* DejikoProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		249A175C1A5C2E4C004ED4E2 /* DejikoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A175B1A5C2E4C004ED4E2 /* DejikoProvider.swift */; };
+		249A175E1A5C3145004ED4E2 /* PixivDejikoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A175D1A5C3145004ED4E2 /* PixivDejikoProvider.swift */; };
+		249A17651A5D79A2004ED4E2 /* DejikoProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249A173B1A5C2D3E004ED4E2 /* DejikoProvider.framework */; };
+		249A17671A60CEC5004ED4E2 /* PixivDejikoProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A17661A60CEC5004ED4E2 /* PixivDejikoProviderTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,10 +84,12 @@
 		249A17341A5C2C88004ED4E2 /* DejikoProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DejikoProvider.framework; path = "../DejikoProvider/build/Debug-iphoneos/DejikoProvider.framework"; sourceTree = "<group>"; };
 		249A173B1A5C2D3E004ED4E2 /* DejikoProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DejikoProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		249A173E1A5C2D3E004ED4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		249A173F1A5C2D3E004ED4E2 /* DejikoProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DejikoProvider.h; sourceTree = "<group>"; };
 		249A17451A5C2D3E004ED4E2 /* DejikoProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DejikoProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		249A174D1A5C2D3E004ED4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		249A174E1A5C2D3E004ED4E2 /* DejikoProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejikoProviderTests.swift; sourceTree = "<group>"; };
+		249A175B1A5C2E4C004ED4E2 /* DejikoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DejikoProvider.swift; path = DejikoProvider/DejikoProvider.swift; sourceTree = "<group>"; };
+		249A175D1A5C3145004ED4E2 /* PixivDejikoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixivDejikoProvider.swift; sourceTree = "<group>"; };
+		249A17661A60CEC5004ED4E2 /* PixivDejikoProviderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixivDejikoProviderTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249A17651A5D79A2004ED4E2 /* DejikoProvider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,8 +192,9 @@
 		249A173C1A5C2D3E004ED4E2 /* DejikoProvider */ = {
 			isa = PBXGroup;
 			children = (
-				249A173F1A5C2D3E004ED4E2 /* DejikoProvider.h */,
 				249A173D1A5C2D3E004ED4E2 /* Supporting Files */,
+				249A175B1A5C2E4C004ED4E2 /* DejikoProvider.swift */,
+				249A175D1A5C3145004ED4E2 /* PixivDejikoProvider.swift */,
 			);
 			path = DejikoProvider;
 			sourceTree = "<group>";
@@ -205,6 +212,7 @@
 			children = (
 				249A174E1A5C2D3E004ED4E2 /* DejikoProviderTests.swift */,
 				249A174C1A5C2D3E004ED4E2 /* Supporting Files */,
+				249A17661A60CEC5004ED4E2 /* PixivDejikoProviderTest.swift */,
 			);
 			path = DejikoProviderTests;
 			sourceTree = "<group>";
@@ -224,7 +232,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249A17401A5C2D3E004ED4E2 /* DejikoProvider.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +415,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249A175C1A5C2E4C004ED4E2 /* DejikoProvider.swift in Sources */,
+				249A175E1A5C3145004ED4E2 /* PixivDejikoProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				249A174F1A5C2D3E004ED4E2 /* DejikoProviderTests.swift in Sources */,
+				249A17671A60CEC5004ED4E2 /* PixivDejikoProviderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +561,7 @@
 				);
 				INFOPLIST_FILE = DejikoCharge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -565,6 +576,7 @@
 				);
 				INFOPLIST_FILE = DejikoCharge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -606,6 +618,7 @@
 		249A17561A5C2D3E004ED4E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -617,9 +630,12 @@
 				);
 				INFOPLIST_FILE = DejikoProvider/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -629,6 +645,7 @@
 		249A17571A5C2D3E004ED4E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -636,6 +653,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DejikoProvider/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
