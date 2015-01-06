@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:DejikoProvider/DejikoProvider.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:DejikoCharge/DejikoCharge.xcodeproj">
    </FileRef>
 </Workspace>
