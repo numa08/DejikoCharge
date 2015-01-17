@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import DejikoProvider
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let operation = NSBlockOperation {
+            let result = PixivDejikoProvider().requestDejiko(PixivDejikoRequest(page: 0))
+            for r in result {
+                switch(r){
+                case let .Success(resp):
+                    NSLog("\(resp)")
+                case let .Error(e):
+                    NSLog("\(e.localizedDescription)")
+                }
+            }
+        }
+        NSOperationQueue().addOperation(operation)
     }
 
 

@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24E3492D1A6A50720043B5BE /* DejikoProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E349211A6A50720043B5BE /* DejikoProvider.framework */; };
+		24E3494B1A6A50E70043B5BE /* DejikoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E349461A6A50E70043B5BE /* DejikoProvider.swift */; };
+		24E3494C1A6A50E70043B5BE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E349471A6A50E70043B5BE /* Info.plist */; };
+		24E3494D1A6A50E70043B5BE /* PixivDejikoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E349491A6A50E70043B5BE /* PixivDejikoProvider.swift */; };
+		24E349531A6A50F30043B5BE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E349501A6A50F30043B5BE /* Info.plist */; };
+		24E349551A6A52150043B5BE /* DejikoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3494F1A6A50F30043B5BE /* DejikoProviderTests.swift */; };
+		24E349561A6A52180043B5BE /* PixivDejikoProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E349511A6A50F30043B5BE /* PixivDejikoProviderTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24E3492E1A6A50720043B5BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24E349181A6A50720043B5BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24E349201A6A50720043B5BE;
+			remoteInfo = DejikoProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24E349211A6A50720043B5BE /* DejikoProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DejikoProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E3492C1A6A50720043B5BE /* DejikoProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DejikoProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E349461A6A50E70043B5BE /* DejikoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DejikoProvider.swift; sourceTree = "<group>"; };
+		24E349471A6A50E70043B5BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24E349491A6A50E70043B5BE /* PixivDejikoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixivDejikoProvider.swift; sourceTree = "<group>"; };
+		24E3494F1A6A50F30043B5BE /* DejikoProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DejikoProviderTests.swift; sourceTree = "<group>"; };
+		24E349501A6A50F30043B5BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24E349511A6A50F30043B5BE /* PixivDejikoProviderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixivDejikoProviderTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24E3491D1A6A50720043B5BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24E349291A6A50720043B5BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E3492D1A6A50720043B5BE /* DejikoProvider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24E349171A6A50720043B5BE = {
+			isa = PBXGroup;
+			children = (
+				24E349441A6A50E70043B5BE /* DejikoProvider */,
+				24E3494E1A6A50F30043B5BE /* DejikoProviderTests */,
+				24E349221A6A50720043B5BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24E349221A6A50720043B5BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24E349211A6A50720043B5BE /* DejikoProvider.framework */,
+				24E3492C1A6A50720043B5BE /* DejikoProviderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24E349441A6A50E70043B5BE /* DejikoProvider */ = {
+			isa = PBXGroup;
+			children = (
+				24E349461A6A50E70043B5BE /* DejikoProvider.swift */,
+				24E349471A6A50E70043B5BE /* Info.plist */,
+				24E349481A6A50E70043B5BE /* Pixiv */,
+			);
+			path = DejikoProvider;
+			sourceTree = "<group>";
+		};
+		24E349481A6A50E70043B5BE /* Pixiv */ = {
+			isa = PBXGroup;
+			children = (
+				24E349491A6A50E70043B5BE /* PixivDejikoProvider.swift */,
+			);
+			path = Pixiv;
+			sourceTree = "<group>";
+		};
+		24E3494E1A6A50F30043B5BE /* DejikoProviderTests */ = {
+			isa = PBXGroup;
+			children = (
+				24E3494F1A6A50F30043B5BE /* DejikoProviderTests.swift */,
+				24E349501A6A50F30043B5BE /* Info.plist */,
+				24E349511A6A50F30043B5BE /* PixivDejikoProviderTest.swift */,
+			);
+			path = DejikoProviderTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24E3491E1A6A50720043B5BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24E349201A6A50720043B5BE /* DejikoProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E349371A6A50720043B5BE /* Build configuration list for PBXNativeTarget "DejikoProvider" */;
+			buildPhases = (
+				24E3491C1A6A50720043B5BE /* Sources */,
+				24E3491D1A6A50720043B5BE /* Frameworks */,
+				24E3491E1A6A50720043B5BE /* Headers */,
+				24E3491F1A6A50720043B5BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DejikoProvider;
+			productName = DejikoProvider;
+			productReference = 24E349211A6A50720043B5BE /* DejikoProvider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		24E3492B1A6A50720043B5BE /* DejikoProviderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E3493A1A6A50720043B5BE /* Build configuration list for PBXNativeTarget "DejikoProviderTests" */;
+			buildPhases = (
+				24E349281A6A50720043B5BE /* Sources */,
+				24E349291A6A50720043B5BE /* Frameworks */,
+				24E3492A1A6A50720043B5BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24E3492F1A6A50720043B5BE /* PBXTargetDependency */,
+			);
+			name = DejikoProviderTests;
+			productName = DejikoProviderTests;
+			productReference = 24E3492C1A6A50720043B5BE /* DejikoProviderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24E349181A6A50720043B5BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = numa08;
+				TargetAttributes = {
+					24E349201A6A50720043B5BE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					24E3492B1A6A50720043B5BE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 24E3491B1A6A50720043B5BE /* Build configuration list for PBXProject "DejikoProvider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24E349171A6A50720043B5BE;
+			productRefGroup = 24E349221A6A50720043B5BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24E349201A6A50720043B5BE /* DejikoProvider */,
+				24E3492B1A6A50720043B5BE /* DejikoProviderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24E3491F1A6A50720043B5BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E349531A6A50F30043B5BE /* Info.plist in Resources */,
+				24E3494C1A6A50E70043B5BE /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24E3492A1A6A50720043B5BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24E3491C1A6A50720043B5BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E3494B1A6A50E70043B5BE /* DejikoProvider.swift in Sources */,
+				24E3494D1A6A50E70043B5BE /* PixivDejikoProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24E349281A6A50720043B5BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E349551A6A52150043B5BE /* DejikoProviderTests.swift in Sources */,
+				24E349561A6A52180043B5BE /* PixivDejikoProviderTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24E3492F1A6A50720043B5BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24E349201A6A50720043B5BE /* DejikoProvider */;
+			targetProxy = 24E3492E1A6A50720043B5BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24E349351A6A50720043B5BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24E349361A6A50720043B5BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24E349381A6A50720043B5BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DejikoProvider/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		24E349391A6A50720043B5BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DejikoProvider/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		24E3493B1A6A50720043B5BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DejikoProviderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24E3493C1A6A50720043B5BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DejikoProviderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24E3491B1A6A50720043B5BE /* Build configuration list for PBXProject "DejikoProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E349351A6A50720043B5BE /* Debug */,
+				24E349361A6A50720043B5BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24E349371A6A50720043B5BE /* Build configuration list for PBXNativeTarget "DejikoProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E349381A6A50720043B5BE /* Debug */,
+				24E349391A6A50720043B5BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		24E3493A1A6A50720043B5BE /* Build configuration list for PBXNativeTarget "DejikoProviderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E3493B1A6A50720043B5BE /* Debug */,
+				24E3493C1A6A50720043B5BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24E349181A6A50720043B5BE /* Project object */;
+}
