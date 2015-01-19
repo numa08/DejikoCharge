@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2458A9F31A6D5BED0054B003 /* AsyncImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2458A9F21A6D5BED0054B003 /* AsyncImageView.framework */; };
 		249A16BD1A5C267D004ED4E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A16BC1A5C267D004ED4E2 /* AppDelegate.swift */; };
 		249A16C01A5C267D004ED4E2 /* DejikoCharge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 249A16BE1A5C267D004ED4E2 /* DejikoCharge.xcdatamodeld */; };
 		249A16C21A5C267D004ED4E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A16C11A5C267D004ED4E2 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2458A9F21A6D5BED0054B003 /* AsyncImageView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncImageView.framework; path = "../AsyncImageView/build/Debug-iphoneos/AsyncImageView.framework"; sourceTree = "<group>"; };
 		249A16B71A5C267D004ED4E2 /* DejikoCharge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DejikoCharge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		249A16BB1A5C267D004ED4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		249A16BC1A5C267D004ED4E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2458A9F31A6D5BED0054B003 /* AsyncImageView.framework in Frameworks */,
 				24CCFE0A1A6A52AD00A4EA34 /* DejikoProvider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +80,7 @@
 		249A16AE1A5C267D004ED4E2 = {
 			isa = PBXGroup;
 			children = (
+				2458A9F21A6D5BED0054B003 /* AsyncImageView.framework */,
 				24CCFE091A6A52AD00A4EA34 /* DejikoProvider.framework */,
 				249A16B91A5C267D004ED4E2 /* DejikoCharge */,
 				249A16D21A5C267D004ED4E2 /* DejikoChargeTests */,
@@ -361,6 +365,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/numa08/Documents/workspace/DejikoCharge/DejikoProvider/build/Debug-iphoneos",
+					"/Users/numa08/Documents/workspace/DejikoCharge/AsyncImageView/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DejikoCharge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -376,6 +381,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/numa08/Documents/workspace/DejikoCharge/DejikoProvider/build/Debug-iphoneos",
+					"/Users/numa08/Documents/workspace/DejikoCharge/AsyncImageView/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DejikoCharge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
