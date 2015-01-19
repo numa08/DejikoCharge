@@ -8,13 +8,23 @@
 
 import UIKit
 import DejikoProvider
+import AsyncImageView
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var contentImageView: AsyncImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.contentImageView.contentMode = .ScaleAspectFit
         let operation = NSBlockOperation {
-            let result = PixivDejikoProvider().requestDejiko(PixivDejikoRequest(page: 0))
+            let result = PixivDejikoProvider().requestDejiko(PixivDejikoRequest(page: 1))
+            let content = result.map{$0.success{$0.content}}.first
+            if let con = content {
+                if let u = con {
+                    self.contentImageView.contentURL = NSURL(string: u)
+                }
+            }
             for r in result {
                 switch(r){
                 case let .Success(resp):

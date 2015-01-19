@@ -94,69 +94,6 @@ public class PixivDejikoProvider: DejikoProvider {
     }
 }
 
-//        func fix(f : ([String], Int, [DejikoRequestResult]) -> [D ejikoRequestResult], [String], Int, [DejikoRequestResult]) -> (([String], Int, [DejikoRequestResult]) -> [DejikoRequestResult]) {
-//            var fix_f : (([String], Int, [DejikoRequestResult]) -> [DejikoRequestResult])!
-//            fix_f = {(l : [String], i : Int, r : [DejikoRequestResult]) -> [DejikoRequestResult] in return f(l, i, r)}
-//            return fix_f
-//        }
-        
-        
-        
-//        func parser(f : ([String], Int, [DejikoRequestResult]) -> [DejikoRequestResult], line : [String], index : Int, results : [DejikoRequestResult]) -> [DejikoRequestResult] {
-//            if(index == line.count) {
-//                return results
-//            }
-//            let columns = line[index].componentsSeparatedByString(",")
-//            let (urlString, title) = (columns.get(9)?.stringByReplacingOccurrencesOfString("\"", withString: ""), columns.get(3)?.stringByReplacingOccurrencesOfString("\"", withString: ""))
-//
-//            var mr = results
-//            mr.append(res)
-//            return f(line, index + 1, mr)
-//        }
-//        
-//
-//        func result(lines : [String], index : Int) -> [DejikoRequestResult] {
-//            if index == lines.count {
-//                return []
-//            }
-//            
-//            func _result(lines : [String], idx : Int, results : [DejikoRequestResult]) -> [DejikoRequestResult]{
-//                if index == lines.count {
-//                    return results
-//                }
-//                let columns = lines[idx].componentsSeparatedByString(",")
-//                let (urlString, title) = (columns.get(9)?.stringByReplacingOccurrencesOfString("\"", withString: ""), columns.get(3)?.stringByReplacingOccurrencesOfString("\"", withString: ""))
-//                let res : DejikoRequestResult = {
-//                    switch(urlString, title) {
-//                    case (let a, .None):
-//                        let e = DejikoRequestResult.Error(self.error(-1, description: "Title Column Error"))
-//                        return e
-//                    case (.None, let b):
-//                        let e = DejikoRequestResult.Error(self.error(-1, description: "URL Column Error"))
-//                        return e
-//                    case (.None, .None):
-//                        let e = DejikoRequestResult.Error(self.error(-1, description: "Title and URL Column Error"))
-//                        return e
-//                    case (let .Some(u), let .Some(t)):
-//                        let resp = NSURL(string: u) >>= {PixivDejikoResponse(imageURL: $0, title: t)} >>= {DejikoRequestResult.Success($0)}
-//                        if let rs = resp {
-//                            return rs
-//                        } else {
-//                            let e = DejikoRequestResult.Error(self.error(-1, description: "URL Format Error"))
-//                            return e
-//                        }
-//                    }
-//                }()
-//                var r = results
-//                r.append(res)
-//                return _result(lines, idx + 1, r)
-//            }
-//            
-//            return _result(lines, index, [DejikoRequestResult]())
-//        }
-//    }
-//}
-
 public class PixivDejikoRequest: DejikoRequest {
     let QUERY_URL = NSURL(string: "http://spapi.pixiv.net/iphone/search.php?&s_mode=s_tag&word=%E3%81%A7%E3%81%98%E3%81%93")!
     
